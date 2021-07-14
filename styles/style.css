@@ -12,16 +12,13 @@ body{
 /* ----------------------------------
         Top section styles
 --------------------------------- */
-
 .containner-top{
     background-color: #2D25A0;
     padding: 67px 141px 86px 105px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    /* grid-column-gap: 102px; rr */
 }
 .watch-live{
-    /* margin-left: 15xp; rr*/
     padding: 0 51px;
 }
 .watch-live h1{
@@ -57,7 +54,6 @@ body{
     /* soft transition back on hover off */
     transition: transform .5s;
 }
-
 
 
 /* -------------------------------------
@@ -164,8 +160,6 @@ footer{
 
     /* Top section */
     .containner-top{
-        /* substract booth side padding from 100% width */
-        /* width: calc(100%-16*2); */
         grid-template-columns: 1fr;
         grid-column-gap: 0;
         padding: 16px;
@@ -202,7 +196,6 @@ footer{
         grid-gap: 24px 0;
     }
     .match-summary, .watch-highlight{
-        overflow: hidden;
         padding: 15px;
         border-radius: 5px;
     }
@@ -211,9 +204,6 @@ footer{
     }
 
     /* footer section */
-    footer{
-
-    }
     .containner{
         width: 100%;
     }
