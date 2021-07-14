@@ -1,0 +1,223 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+/* Common styles or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+
+/* ----------------------------------
+        Top section styles
+--------------------------------- */
+
+.containner-top{
+    background-color: #2D25A0;
+    padding: 67px 141px 86px 105px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* grid-column-gap: 102px; rr */
+}
+.watch-live{
+    /* margin-left: 15xp; rr*/
+    padding: 0 51px;
+}
+.watch-live h1{
+    color: white;
+    font-size: 64px;
+}
+.watch-live a{
+    text-decoration: none;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.watch-live a:hover{
+    background-color: #db5a89;
+    transition: background-color .2s;
+}
+
+.fa-arrow-right{
+    padding-left: 8px;
+}
+.banner{
+    padding-left: 51px;
+}
+.banner:hover img{
+    transform: rotatey(-180deg) ;
+    transition: transform .5s;
+}
+.banner img{
+    width: 100%;
+    /* soft transition back on hover off */
+    transition: transform .5s;
+}
+
+
+
+/* -------------------------------------
+        Players styles section
+----------------------------------------*/
+.players-containner{
+    padding: 70px 120px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    grid-gap: 27px 30px;
+}
+.player{
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(20, 14, 14, 0.15);
+}
+.player img{
+    width: 100%;
+}
+.player-details h2{
+    font-size: 28px;
+    padding-top: 16px;
+    margin-bottom: 10px;
+}
+.player-details P{
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 400px;
+    color: #6C6C6C;
+}
+
+
+/* -------------------------------------
+        Footer styles
+----------------------------------------*/
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 64px 0;
+}
+.containner{
+    width: 483.87px;
+    /* height: 213px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containner img{
+    height: 110px;
+}
+.social-links img{
+    height: 32px;
+    width: 32px;
+    margin: 0 7px;
+}
+.social-links a{
+    text-decoration: none;
+    height: 0;
+}
+.containner p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+
+/* -------------------------------------
+        Match-highlight styles section
+           (extra marks section)
+----------------------------------------*/
+.match-highlight{
+    padding: 0 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+}
+.match-summary, .watch-highlight{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(20, 14, 14, 0.15);
+}
+.match-summary h2{
+    margin-bottom: 10px;
+}
+.match-summary details{
+    margin-left: 10px;
+    margin-bottom: 30px;
+    color: rgb(112, 112, 112);
+}
+.match-summary summary{
+    font-weight: 700;
+    font-size: 1.3em;
+    color: rgb(44, 44, 44);
+}
+
+
+
+/* -------------------------------------
+            Media Quary
+----------------------------------------*/
+/* For Mobile device */
+
+@media only screen and (max-width:688px){
+
+    /* Top section */
+    .containner-top{
+        /* substract booth side padding from 100% width */
+        /* width: calc(100%-16*2); */
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+        padding: 16px;
+    }
+    .watch-live{
+        margin-bottom: 50px;
+        padding: 0;
+    }
+    .watch-live h1{
+        font-size: 36px;
+        padding-right: 66px;
+    }
+    .banner{
+        padding: 0;
+    }
+    .banner img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* players style section */
+    .players-containner{
+        padding: 47px 15px;
+    }
+    .players{
+        grid-template-columns: 1fr;
+        grid-gap: 24px 0;
+    }
+
+    /* Match-Highlight section (extra mark) */
+    .match-highlight{
+        padding: 16px;
+        grid-template-columns: 1fr;
+        grid-gap: 24px 0;
+    }
+    .match-summary, .watch-highlight{
+        overflow: hidden;
+        padding: 15px;
+        border-radius: 5px;
+    }
+    .watch-highlight iframe{
+        width: 100%;
+    }
+
+    /* footer section */
+    footer{
+
+    }
+    .containner{
+        width: 100%;
+    }
+    .containner>img{
+        height: 63px;
+    }
+}
