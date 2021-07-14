@@ -186,14 +186,14 @@ footer{
     }
     .players{
         grid-template-columns: 1fr;
-        grid-gap: 24px 0;
+        grid-row-gap: 24px;
     }
 
     /* Match-Highlight section (extra mark) */
     .match-highlight{
         padding: 16px;
         grid-template-columns: 1fr;
-        grid-gap: 24px 0;
+        grid-row-gap: 24px;
     }
     .match-summary, .watch-highlight{
         padding: 15px;
